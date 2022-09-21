@@ -3,7 +3,7 @@
         $nis = $_GET["nis"];
         
         $query = "
-            DELETE FROM datadiri
+            DELETE FROM nilai
             WHERE nis = '$nis';
             ";
 
