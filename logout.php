@@ -1,6 +1,12 @@
 <?php
-    session_start();
-    $_SESSION['userweb']="";
-    header ("location:login.php");
-    exit;
-?>
+    include('./input-config.php');
+
+    session_destroy();
+
+    echo "
+ <script> 
+    alert('Logout berhasi');
+    window.location='login.php';
+ </script>
+    ";
+?>    
